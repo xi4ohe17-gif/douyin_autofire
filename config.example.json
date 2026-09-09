@@ -1,14 +1,21 @@
 {
-  "friends": ["好友A", "好友B"],
+  "friends": [
+    "<X> 好友A的抖音昵称(这里填聊天里显示的名字,例如 '小王同学')",
+    "<X> 好友B的抖音昵称",
+    "<X> 好友C的抖音昵称"
+  ],
   "messages": [
-    {"type": "text", "value": "今天也要开心呀 😊"},
+    {"type": "text", "value": "今天也要开心呀"},
+    {"type": "text", "value": "打卡第 N 天 / 早安"},
+    {"type": "text", "value": "晚上好,今天过得怎么样?"},
+    {"type": "text", "value": "想你了,火花不许断!"},
     {"type": "sticker", "value": "比心"}
   ],
   "stickers": {
     "比心": {"label": "比心", "category": "常用", "fallback_index": 3}
   },
-  "send_interval_seconds": {"min": 3, "max": 8},
-  "prevent_duplicates": false,
-  "target_open_retries": 1,
-  "target_open_timeout_seconds": 15
+  "send_interval_seconds": {"min": 60, "max": 180},
+  "prevent_duplicates": true,
+  "target_open_retries": 2,
+  "target_open_timeout_seconds": 20
 }
